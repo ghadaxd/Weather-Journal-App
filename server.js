@@ -26,8 +26,10 @@ const getData = (request, response) => {
 };
 
 const addEntry = (request, response) => {
+  const key = Math.floor(Math.random() * 100);
   const newEntry = request.body;
-  projectData = { ...projectData, newEntry };
+  projectData[key + "_key"] = newEntry;
+  response.send("received");
 };
 
 // Initialize all route with a callback function
