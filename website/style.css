@@ -1,111 +1,96 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+body {
+  background-image: linear-gradient(to bottom right, #e4f6f8, #f1ecfc);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+#app {
+  display: grid;
+  grid-auto-rows: minmax(70px, auto);
+  color: #22b2da;
+  justify-content: center;
+  height: 98vh;
+  grid-gap: 1em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-.holder{
-
+header {
+  background: url("https://s3.amazonaws.com/video.udacity-data.com/topher/2018/August/5b635343_1-p-explore-weather-trends2x/1-p-explore-weather-trends2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 22vh;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+  height: 12vh;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
+label {
+  display: block;
+  font-size: 24px;
 }
 
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
+input {
+  display: block;
+  height: 50px;
+  width: 416px;
+  background: #05cdba;
+  color: rgba(80, 84, 92, 0.4);
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+button {
+  width: 416px;
+  height: 50px;
+  background: #05cdba;
+  color: #3b4a6b;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+textarea {
+  background: #05cdba;
+  color: rgba(80, 84, 92, 0.4);
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
+}
+button:focus {
+  background: rgba(80, 84, 92, 0.4);
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+::placeholder,
+.title {
+  /* Firefox, Chrome, Opera */
+  color: rgba(80, 84, 92, 0.4);
+  font-family: "Oswald", sans-serif;
+}
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(80, 84, 92, 0.4);
+  font-family: "Oswald", sans-serif;
+}
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(80, 84, 92, 0.4);
+  font-family: "Oswald", sans-serif;
+}

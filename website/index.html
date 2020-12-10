@@ -8,15 +8,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
   </head>
   <body>
-    <div id="app">
-      <div class="holder headline">Weather Journal App</div>
-      <div class="holder zip">
-        <label for="zip">Enter Zipcode here</label>
-        <input type="text" id="zip" placeholder="enter zip code here" />
+    <main id="app">
+      <header></header>
+      <h1>Weather Journal App</h1>
+      <div class="zip">
+        <label for="zip">Zipcode</label>
+        <input type="text" id="zip" placeholder="Enter zip code here" />
       </div>
-      <div class="holder feel">
+      <div class="feel">
         <label for="feelings">How are you feeling today?</label>
         <textarea
           class="myInput"
@@ -25,9 +44,9 @@
           rows="9"
           cols="50"
         ></textarea>
-        <button id="generate" type="submit">Generate</button>
       </div>
-      <div class="holder entry">
+      <button id="generate" type="submit">Generate</button>
+      <div class="entry">
         <div class="title">Most Recent Entry</div>
         <div id="entryHolder">
           <div id="date"></div>
@@ -35,7 +54,7 @@
           <div id="content"></div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
