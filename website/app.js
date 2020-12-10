@@ -59,7 +59,8 @@ const generateData = () => {
   const baseURL = "http://api.openweathermap.org/data/2.5/weather?zip=";
   const zipCode = document.querySelector("#zip").value;
   // Personal API Key for OpenWeatherMap API
-  const WEATHER_API_KEY = "&appid=7a0d50ccb5d07e3e0970d2b6e1741285";
+  const WEATHER_API_KEY =
+    "&appid=7a0d50ccb5d07e3e0970d2b6e1741285&units=imperial";
   getTemperature(baseURL, zipCode, WEATHER_API_KEY).then(function (data) {
     let date = new Date();
 
