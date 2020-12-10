@@ -10,19 +10,19 @@ This project has a local server, server side code, and client side code.
 
 #### First, install dependencies
 
-npm isntall
+`npm isntall`
 
 #### Second, run the server (server uses port 3000)
 
-node server.js
+`node server.js`
 
 #### Third, open the app on the browser
 
-http://localhost:3000/
+`http://localhost:3000/`
 
 #### Finaly, to test the app, try ...
 
-94040
+`94040`
 
 ## Notes
 
